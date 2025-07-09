@@ -4,7 +4,17 @@
 *{
   font-family: "Work Sans", sans-serif;
 }
-
+.btn-primary{
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+}
 header{
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
@@ -48,4 +58,29 @@ nav li a{
 .banner-description{
     color:  #727272;
 
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width: 412px) {
+    header{
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* Tablet or medium devices */
+
+@media screen and (min-width:412px) and (max-width:972px) {
+ header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
